@@ -93,7 +93,7 @@ for line in lines:
         log.write(f"\tError while writing to db at row {i}\t")
         log.write(str(error) + '\n')
 
-    if i % 10 == 0:					# update progress every 10 lines
+    if i % 10 == 0:			# update progress every 10 lines
         sys.stdout.write(f"\rProgress: {(i / line_count*100):.7f}%")    
         sys.stdout.flush()
     i += 1
